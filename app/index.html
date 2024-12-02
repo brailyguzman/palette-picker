@@ -9,13 +9,17 @@
     <body>
         <div id="app">
             <header>
-                <h1>
-                    <h1>Palette Picker</h1>
-                </h1>
+                <h1>Palette Picker</h1>
             </header>
             <main>
-                <section id="form-section">
-                    <form id="add-palette-form">
+                <section
+                    id="form-section"
+                    aria-label="A section that displays the form to create a new palette"
+                >
+                    <form
+                        id="add-palette-form"
+                        aria-label="A form to create a new palette"
+                    >
                         <h2>Add a Palette</h2>
 
                         <div class="new-palette-title-container">
@@ -100,7 +104,11 @@
                     </form>
                 </section>
 
-                <section id="palettes-section"></section>
+                <section id="palettes-section">
+                    <h2>Palettes</h2>
+
+                    <ul id="palette-container"></ul>
+                </section>
             </main>
         </div>
         <script type="module" src="/src/index.js"></script>
