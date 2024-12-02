@@ -7,7 +7,102 @@
         <title>Palette Picker</title>
     </head>
     <body>
-        <div id="app"></div>
+        <div id="app">
+            <header>
+                <h1>
+                    <h1>Palette Picker</h1>
+                </h1>
+            </header>
+            <main>
+                <section id="form-section">
+                    <form id="add-palette-form">
+                        <h2>Add a Palette</h2>
+
+                        <div class="new-palette-title-container">
+                            <label
+                                for="new-palette-title"
+                                id="new-palette-title-label"
+                                >Palette Title:
+                            </label>
+
+                            <input
+                                type="text"
+                                name="paletteTitle"
+                                id="new-palette-title"
+                                required
+                            />
+                        </div>
+
+                        <div class="new-palette-color-container">
+                            <div class="new-palette-color">
+                                <label for="first-color">Color #1</label>
+                                <input
+                                    type="color"
+                                    name="firstColor"
+                                    id="first-color"
+                                    class="add-palette-color"
+                                />
+                            </div>
+                            <div class="new-palette-color">
+                                <label for="second-color">Color #2</label>
+                                <input
+                                    type="color"
+                                    name="secondColor"
+                                    id="second-color"
+                                    class="add-palette-color"
+                                />
+                            </div>
+                            <div class="new-palette-color">
+                                <label for="third-color">Color #3</label>
+                                <input
+                                    type="color"
+                                    name="thirdColor"
+                                    id="third-color"
+                                    class="add-palette-color"
+                                />
+                            </div>
+                        </div>
+
+                        <fieldset>
+                            <legend>Temperature</legend>
+
+                            <div class="temperature-container">
+                                <input
+                                    type="radio"
+                                    name="temperature"
+                                    id="temperature-warm"
+                                    value="warm"
+                                />
+                                <label for="temperature-warm">Warm</label>
+
+                                <input
+                                    type="radio"
+                                    name="temperature"
+                                    id="temperature-neutral"
+                                    value="neutral"
+                                    checked
+                                />
+                                <label for="temperature-neutral">Neutral</label>
+
+                                <input
+                                    type="radio"
+                                    name="temperature"
+                                    id="temperature-cool"
+                                    value="cool"
+                                />
+                                <label for="temperature-cool">Cool</label>
+                            </div>
+                        </fieldset>
+
+                        <button id="add-palette-submit">
+                            Create the palette
+                        </button>
+                    </form>
+                </section>
+
+                <section id="palettes-section"></section>
+            </main>
+        </div>
         <script type="module" src="/src/index.js"></script>
     </body>
 </html>
