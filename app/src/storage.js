@@ -1,10 +1,10 @@
 import initialPalettes from './palettes.json';
 
-export const setLocalStorageKey = (key, value) => {
+const setLocalStorageKey = (key, value) => {
     localStorage.setItem(key, JSON.stringify(value));
 };
 
-export const getLocalStorageKey = (key) => {
+const getLocalStorageKey = (key) => {
     const storedValue = localStorage.getItem(key);
     return JSON.parse(storedValue);
 };
